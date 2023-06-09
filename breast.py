@@ -3,6 +3,9 @@ from PIL import Image
 import tensorflow as tf
 import numpy as np
 
+# Load the saved model
+model_path = 'C:/Users/dell/Desktop/mimi/diss.h5'
+model = tf.keras.models.load_model(model_path)
 
 # Define a function to preprocess the image and make a prediction
 def predict(image):
